@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | QR code component</title>
+    <style>
+      body {
+        background-color: hsl(212, 45%, 89%);
+        margin: 0;
+      }
+
+      main {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .qr-comp {
+        display: flex;
+        flex-direction: column;
+        max-width: calc(1 / 5 * 1440px);
+        width: 80vw;
+        padding: 18px;
+        background-color: white;
+        border-radius: 15px;
+      }
+
+      img {
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .text {
+        padding: 0 10px;
+        font-family: "Outfit", sans-serif;
+        text-align: center;
+      }
+
+      h3 {
+        color: hsl(218, 44%, 22%);
+        font-weight: 700;
+        font-size: 1.3rem;
+        margin-bottom: 3px;
+      }
+
+      p {
+        color: hsl(216, 15%, 48%);
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.5;
+        padding: 0px 5px;
+      }
+
+      .attribution {
+        position: absolute;
+        bottom: 20px;
+        text-align: center;
+        padding: 0 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="qr-comp">
+        <img src="images/image-qr-code.png" />
+        <div class="text">
+          <h3>Improve your front-end skills by building projects</h3>
+          <p>
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level
+          </p>
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/imhefizh" target="_blank"
+          >Maulana Hafidz Ismail</a
+        >.
+      </div>
+    </main>
+  </body>
+</html>
