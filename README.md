@@ -1,5 +1,5 @@
 # Welcome to my FrontEnd Web Lab
-I'm doing [Frontend Mentor](https://www.frontendmentor.io/) challenges here, to sharpen my experienced on Frontend field. 
+I'm doing Frontend Mentor's challenges here, to sharpen my experiences on Frontend field. 
 
 ## Check the live preview here:
 
