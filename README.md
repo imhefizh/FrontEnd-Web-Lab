@@ -1,5 +1,6 @@
-# Welcome to my FrontEnd Web Lab
-I'm doing Frontend Mentor's challenges here, to sharpen my experiences on Frontend field. 
+# FrontEnd Web Lab
+
+I'm doing Frontend Mentor's challenges here, to sharpen my experiences on Frontend field. I'll be trying to solve every challenges with just HTML, Vanilla CSS, and Vanilla Javascript, without any Framework or significance library.
 
 ## Check the live preview here:
 
