@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Social links profile</title>
+    <style>
+      :root {
+        --color-green: hsl(75, 94%, 57%);
+        --color-grey-700: hsl(0, 0%, 20%);
+        --color-grey-800: hsl(0, 0%, 12%);
+        --color-grey-900: hsl(0, 0%, 8%);
+
+        --font: "Inter", Arial;
+        --font-size: 14px;
+        --font-w-h1: 700;
+        --font-w-h2: 600;
+        --font-w-h3: 400;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-grey-900);
+        margin: 0;
+        height: 100vh;
+        color: white;
+        font-family: var(--font);
+        text-align: center;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+        background-color: var(--color-grey-800);
+        border-radius: 15px;
+        max-width: calc(1 / 5 * 1440px);
+        width: 80%;
+      }
+
+      .avatar {
+        border-radius: 100%;
+        width: 30%;
+        height: auto;
+        cursor: pointer;
+        padding: 0px;
+        border: var(--color-green) solid 0px;
+        transition: width 1s ease, padding 1s ease, border 0.4s ease;
+      }
+
+      .avatar:focus {
+        width: 60%;
+        border: var(--color-green) solid 5px;
+        padding: 6px;
+      }
+
+      .name {
+        font-weight: var(--font-w-h3);
+        margin: 0px 0px;
+        padding-top: 20px;
+        padding-bottom: 8px;
+        font-size: 1.7rem;
+      }
+
+      .address {
+        font-weight: var(--font-w-h1);
+        font-size: var(--font-size);
+        color: var(--color-green);
+        margin: 0px 0px;
+      }
+
+      .desc {
+        font-size: var(--font-size);
+        text-align: center;
+        font-weight: 300;
+        padding-top: 15px;
+        color: hsl(0, 0%, 83%);
+      }
+
+      nav {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-top: 1rem;
+        text-align: center;
+        width: 100%;
+      }
+
+      .grid {
+        display: grid;
+        position: absolute;
+        inset: 0px;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        z-index: -1;
+      }
+
+      .tips {
+        font-family: "Times New Roman", Times, serif;
+        text-align: left;
+        font-size: 3rem;
+        grid-column: 3;
+        width: calc(1 / 3 * 1440px);
+        opacity: 0.1;
+      }
+
+      @media only screen and (max-width: 1440px) {
+        .tips {
+          display: none;
+        }
+      }
+
+      nav a {
+        width: 100%;
+        border-radius: 8px;
+        color: white;
+        text-decoration: none;
+        font-weight: var(--font-w-h2);
+        background-color: var(--color-grey-700);
+        padding: 15px 0;
+        font-size: var(--font-size);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      nav a:hover {
+        transform: translateY(-2px);
+        box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
+        background-color: hsl(0, 0%, 25%);
+      }
+
+      .attribution {
+        position: absolute;
+        padding: 0 10px;
+        bottom: calc(60vh / 100vh * 20px);
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 100%, 84%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        src="./assets/images/avatar-jessica.jpeg"
+        alt="avatar"
+        class="avatar"
+        tabindex="0"
+      />
+      <h1 class="name">Jessica Randall</h1>
+      <h2 class="address">London, United Kingdom</h2>
+      <p class="desc">"Front-end developer and avid reader"</p>
+      <nav>
+        <a href="">Github</a>
+        <a href="">Frontend Mentor</a>
+        <a href="">LinkedIn</a>
+        <a href="">Twitter</a>
+        <a href="">Instagram</a>
+      </nav>
+    </div>
+
+    <div class="grid">
+      <p class="tips">
+        Try to hover on the buttons or click the avatar to focus on it!
+      </p>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Maulana Hafidz Ismail</a>.
+    </div>
+  </body>
+</html>
