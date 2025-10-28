@@ -6,3 +6,4 @@ I'm doing Frontend Mentor's challenges here, to sharpen my experiences on Fronte
 
 1. [QR Code Component](https://imhefizh.github.io/FrontEnd-Web-Lab/qr-code-component/)
 2. [Blog Preview Card](https://imhefizh.github.io/FrontEnd-Web-Lab/blog-preview-card-main/)
+3. [Blog Preview Card](https://imhefizh.github.io/FrontEnd-Web-Lab/social-links-profile-main/)

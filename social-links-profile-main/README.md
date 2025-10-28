@@ -37,8 +37,8 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 ### Links
 
-- Solution URL: [Add solution URL here]()
-- Live Site URL: [Add live site URL here](https://imhefizh.github.io/FrontEnd-Web-Lab//)
+- Solution URL: [Add solution URL here](https://github.com/imhefizh/FrontEnd-Web-Lab/tree/main/social-links-profile-main)
+- Live Site URL: [Add live site URL here](https://imhefizh.github.io/FrontEnd-Web-Lab/social-links-profile-main/)
 
 ## My process
 
