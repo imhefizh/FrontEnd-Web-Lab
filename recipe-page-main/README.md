@@ -32,8 +32,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Add solution URL here]()
-- Live Site URL: [Add live site URL here](https://imhefizh.github.io/FrontEnd-Web-Lab//)
+- Solution URL: [Solution URL here](https://github.com/imhefizh/FrontEnd-Web-Lab/tree/main/recipe-page-main)
+- Live Site URL: [Live site URL here](https://imhefizh.github.io/FrontEnd-Web-Lab/recipe-page-main)
 
 ## My process
 
@@ -42,12 +42,16 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
+- Media Queries
 
 ### What I learned
 
-1.
+1. Apparently, I can set rem value by setting up font-size on html selector
+2. Apparently, body element is not in `relative` position by default, it's in `static` position
+3. `clamp()` is very useful for managing `font-size` property. I can set the minimal, ideal, and maximal value on it.
+4. Apparently, I can use `font` property to set all I need for the font. So I combine it with CSS Variable value like `400 1rem "Inter", Arial;`. More efficient. Then, just overwrite the size with `font-size`.
+5. Considering `list-style-position` property, either it's `inside` or `outside` is tricky when facing margin or padding. I did it on `outside` value and leverage `margin-left` property for setting up the left margin from the bullet.
 
 ### Useful resources
 
