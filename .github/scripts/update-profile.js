@@ -10,7 +10,7 @@ const date = new Date().toLocaleDateString("en-GB", {
   year: "numeric",
 });
 
-const logLine = `_Update Log: new commit on ${repoName} at ${date}_`;
+const logLine = `_New commit on ${repoName} at ${date}_`;
 
 execSync(`git clone https://github.com/${profileRepo}.git`);
 process.chdir(profileRepo.split("/")[1]);
