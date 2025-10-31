@@ -4,10 +4,14 @@ import { execSync } from "child_process";
 const profileRepo = "imhefizh/imhefizh";
 const token = process.env.GITHUB_TOKEN;
 const repoName = process.env.REPO_NAME.split("/")[1];
-const date = new Date().toLocaleDateString("en-GB", {
+const date = new Date().toLocaleString("en-GB", {
   day: "2-digit",
   month: "short",
   year: "numeric",
+  hour: "2-digit",
+  minute: "numeric",
+  second: "numeric",
+  timeZoneName: "long",
 });
 
 const logLine = `new commit on **${repoName}** at ${date}`;
