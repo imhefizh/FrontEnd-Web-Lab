@@ -10,7 +10,7 @@ const date = new Date().toLocaleDateString("en-GB", {
   year: "numeric",
 });
 
-const logLine = `_New commit on ${repoName} at ${date}_`;
+const logLine = `new commit on **${repoName}** at ${date}`;
 
 execSync(`git clone https://github.com/${profileRepo}.git`);
 process.chdir(profileRepo.split("/")[1]);
@@ -20,14 +20,7 @@ const readme = fs.readFileSync("README.md", "utf-8");
 const updated = readme.replace(
   /(<!--LOG-AREA-->)([\s\S]*?)(<!--END-LOG-->)/,
   (_, start, _content, end) => {
-    const logs = _content
-      .split("\n")
-      .map((l) => l.trim())
-      .filter((l) => l && !l.startsWith("<!--"))
-      .slice(0, 4);
-
-    const newLogs = [`- ${logLine}`, ...logs].join("\n");
-    return `${start}\n${newLogs}\n${end}`;
+    return `${start}${logLine}${end}`;
   }
 );
 
