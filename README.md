@@ -1,6 +1,6 @@
 # FrontEnd Web Lab
 
-I'm doing Frontend Mentor's challenges here, to sharpen my experiences on Frontend field. I'll be trying to solve every challenges with just HTML, Vanilla CSS, and Vanilla Javascript, without any Framework or significance library.
+I'm doing online challenges here, taken from Frontend Mentor, Roadmap.sh, and etc, to sharpen my experiences on Frontend field.
 
 ## Check the live preview here:
 
