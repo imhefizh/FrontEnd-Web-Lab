@@ -37,8 +37,8 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [Solution URL here]()
-- Live Site URL: [Live site URL here](https://imhefizh.github.io/FrontEnd-Web-Lab//)
+- Solution URL: [Solution URL here](https://github.com/imhefizh/FrontEnd-Lab/tree/main/four-card-feature-section-master)
+- Live Site URL: [Live site URL here](https://imhefizh.github.io/FrontEnd-Web-Lab/four-card-feature-section-master)
 
 ## My process
 
