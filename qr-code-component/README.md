@@ -35,8 +35,8 @@ Below are the screenshots of the solution I built on 100% Scale:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/imhefizh/FrontEnd-Web-Lab/tree/main/qr-code-component)
-- Live Site URL: [Add live site URL here](https://imhefizh.github.io/FrontEnd-Web-Lab/qr-code-component/)
+- Solution URL: [Solution URL here](https://github.com/imhefizh/FrontEnd-Lab/tree/main/qr-code-component)
+- Live Site URL: [Live site URL here](https://imhefizh.github.io/FrontEnd-Lab/qr-code-component/)
 
 ## My process
 

@@ -39,8 +39,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/imhefizh/FrontEnd-Web-Lab/tree/main/blog-preview-card-main)
-- Live Site URL: [Add live site URL here](https://imhefizh.github.io/FrontEnd-Web-Lab/blog-preview-card-main/)
+- Solution URL: [Add solution URL here](https://github.com/imhefizh/FrontEnd-Lab/tree/main/blog-preview-card-main)
+- Live Site URL: [Add live site URL here](https://imhefizh.github.io/FrontEnd-Lab/blog-preview-card-main/)
 
 ## My process
 

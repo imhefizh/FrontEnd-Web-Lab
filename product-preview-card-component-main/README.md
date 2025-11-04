@@ -38,8 +38,8 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Links
 
-- Solution URL: [Solution URL here](https://github.com/imhefizh/FrontEnd-Web-Lab/tree/main/product-preview-card-component-main)
-- Live Site URL: [Live site URL here](https://imhefizh.github.io/FrontEnd-Web-Lab/product-preview-card-component-main)
+- Solution URL: [Solution URL here](https://github.com/imhefizh/FrontEnd-Lab/tree/main/product-preview-card-component-main)
+- Live Site URL: [Live site URL here](https://imhefizh.github.io/FrontEnd-Lab/product-preview-card-component-main)
 
 ## My process
 

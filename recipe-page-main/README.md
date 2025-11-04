@@ -32,8 +32,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Solution URL here](https://github.com/imhefizh/FrontEnd-Web-Lab/tree/main/recipe-page-main)
-- Live Site URL: [Live site URL here](https://imhefizh.github.io/FrontEnd-Web-Lab/recipe-page-main)
+- Solution URL: [Solution URL here](https://github.com/imhefizh/FrontEnd-Lab/tree/main/recipe-page-main)
+- Live Site URL: [Live site URL here](https://imhefizh.github.io/FrontEnd-Lab/recipe-page-main)
 
 ## My process
 
