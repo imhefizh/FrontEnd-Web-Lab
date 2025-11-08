@@ -92,11 +92,13 @@
       }
 
       html {
+        height: 100%;
         font-size: 15px; /*1 rem*/
-        height: 100vh;
+        background-color: white;
       }
 
       body {
+        min-height: 100%;
         background-color: white;
         position: relative;
         display: flex;
@@ -150,7 +152,7 @@
         border-radius: 10px;
         position: relative;
         overflow: hidden;
-        height: calc(90vw / 100vw * 20rem);
+        min-height: calc(90vw / 100vw * 20rem);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -190,8 +192,13 @@
         body {
           position: relative;
           display: flex;
-          height: 100%;
+          min-height: 100%;
           align-items: center;
+          padding: 40px 0px;
+        }
+
+        .sub-title {
+          padding-bottom: 40px;
         }
 
         .card-container {
@@ -200,6 +207,10 @@
           max-width: calc(6 / 6 * 1440px);
           justify-items: center;
           align-items: center;
+        }
+
+        main {
+          padding: 0px 30px;
         }
       }
 
