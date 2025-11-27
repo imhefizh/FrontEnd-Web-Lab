@@ -36,8 +36,8 @@
     position: absolute;
     display: flex;
     width: 22rem;
-    justify-content: space-between;
-    top: -6rem;
+    justify-content: center;
+    top: -6.5rem;
     border-radius: 1rem;
     background-color: var(--color-dark-grayish-blue);
     padding: 1.5rem 3.5rem;
@@ -45,6 +45,15 @@
     align-items: center;
     transition: opacity 0.5s ease;
     gap: 0.6rem;
+  }
+
+  .pointer {
+    position: absolute;
+    bottom: -2.5rem;
+    background-color: var(--color-dark-grayish-blue);
+    width: 3rem;
+    height: 3rem;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 50%);
   }
 
   .share-desktop img {

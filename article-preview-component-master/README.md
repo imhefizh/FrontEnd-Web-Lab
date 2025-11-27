@@ -57,6 +57,7 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 1. Apparently, `id` prop of an HTML element can't accept more than one argument.
 2. Separating CSS resetter to external css file for modulariy. And I implemented this method for breakpoints as well, for mudularity and easy maintaining.
+3. Importing `main.js` through `<head>` element with `defer` attribute for async file loading.
 
 ### Useful resources
 
