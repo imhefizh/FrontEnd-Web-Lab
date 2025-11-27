@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Article preview component</title>
+    <!--  -->
+    <!-- CSS Resetter -->
+    <link rel="stylesheet" href="./styles/resetter.css" />
+    <!-- Base / Mobile style -->
+    <link rel="stylesheet" href="./styles/base.css" />
+    <!-- Desktop style -->
+    <link rel="stylesheet" href="./styles/endpoint-1024px.css" />
+    <!--  -->
+    <style>
+      :root {
+        --color-dark-grayish-blue: hsl(217, 19%, 35%);
+        --color-desaturated-dark-blue: hsl(214, 17%, 51%);
+        --color-grayish-blue: hsl(212, 23%, 69%);
+        --color-light-grayish-blue: hsl(210, 46%, 95%);
+
+        --font-manrope: 300 1rem "Manrope", Arial;
+      }
+
+      html,
+      body {
+        position: relative;
+        min-height: calc(100dvh + 8dvh);
+        background-color: var(--color-light-grayish-blue);
+        font: var(--font-manrope);
+        font-size: 13px;
+        padding: 0px 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      footer {
+        position: absolute;
+        bottom: calc(80vh / 100vh * 20px);
+        padding: 0px 1rem;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="article-card">
+        <img src="./images/drawers.jpg" alt="cover" class="cover" />
+        <div class="desktop-flex">
+          <div class="content">
+            <h1 class="title">
+              Shift the overall look and feel by adding these wonderful touches
+              to furniture in your home
+            </h1>
+            <p class="excert">
+              Ever been in a room and felt like something was missing? Perhaps
+              it felt slightly bare and uninviting. I've got some simple tips to
+              help you make any room feel complete.
+            </p>
+          </div>
+          <div class="author-container">
+            <div class="detail">
+              <img
+                src="./images/avatar-michelle.jpg"
+                alt="avatar"
+                class="avatar"
+              />
+              <div class="profile">
+                <h2 class="name">Michelle Appleton</h2>
+                <h3 class="date">28 Jun 2020</h3>
+              </div>
+            </div>
+            <div class="desktop-share-container">
+              <div id="share-bar" class="share-desktop hidden">
+                <p>SHARE</p>
+                <div class="icon-container">
+                  <img src="./images/icon-facebook.svg" alt="fb-icon" />
+                  <img src="./images/icon-twitter.svg" alt="tweeter-icon" />
+                  <img src="./images/icon-pinterest.svg" alt="pinterest-icon" />
+                </div>
+              </div>
+              <button id="share" class="share-btn-desktop">
+                <img src="./images/icon-share.svg" alt="share-icon" />
+              </button>
+            </div>
+            <button id="share" class="share-btn-mobile">
+              <img src="./images/icon-share.svg" alt="share-icon" />
+            </button>
+          </div>
+        </div>
+        <div id="share-bar" class="share-mobile hidden">
+          <p>SHARE</p>
+          <div class="icon-container">
+            <img src="./images/icon-facebook.svg" alt="fb-icon" class="fb" />
+            <img
+              src="./images/icon-twitter.svg"
+              alt="tweeter-icon"
+              class="tweeter"
+            />
+            <img
+              src="./images/icon-pinterest.svg"
+              alt="pinterest-icon"
+              class="pinterest"
+            />
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Maulana Hafidz Ismail</a>.
+      </div>
+    </footer>
+
+    <script>
+      const shareBtnMobile =
+        document.getElementsByClassName("share-btn-mobile");
+      const shareBarMobile = document.getElementsByClassName("share-mobile");
+      const shareBtnDesktop =
+        document.getElementsByClassName("share-btn-desktop");
+      const shareBarDesktop = document.getElementsByClassName("share-desktop");
+
+      shareBtnMobile[0].addEventListener("click", (e) => {
+        shareBarMobile[0].classList.toggle("hidden");
+      });
+      shareBtnDesktop[0].addEventListener("click", (e) => {
+        shareBarDesktop[0].classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

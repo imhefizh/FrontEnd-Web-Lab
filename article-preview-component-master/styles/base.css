@@ -1,0 +1,137 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+}
+
+.article-card {
+  background-color: white;
+  border-radius: 15px;
+  height: fit-content;
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.content {
+  padding: 2rem;
+  padding-bottom: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.title {
+  font-size: 1.3rem;
+  color: var(--color-dark-grayish-blue);
+  font-weight: 700;
+}
+
+.excert {
+  color: var(--color-desaturated-dark-blue);
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.author-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  height: 5.4rem;
+  padding: 1.4rem 2rem;
+}
+
+.detail {
+  display: flex;
+  gap: 1rem;
+}
+
+.avatar {
+  border-radius: 100%;
+  height: 3rem;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 1rem;
+}
+
+.profile h2 {
+  font-size: inherit;
+  color: var(--color-dark-grayish-blue);
+}
+
+.profile h3 {
+  font-size: inherit;
+  color: var(--color-desaturated-dark-blue);
+  font-weight: 300;
+}
+
+.share-btn-mobile {
+  border-radius: 100%;
+
+  border: none;
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.1s;
+  z-index: 1;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+.share-mobile {
+  background-color: var(--color-dark-grayish-blue);
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 5.4rem;
+  padding: 1.5rem 2.5rem;
+  color: white;
+  align-items: center;
+  transition: transform 0.5s ease;
+  display: flex;
+}
+
+.share-mobile p {
+  letter-spacing: 0.7rem;
+  font-weight: 100;
+  margin-right: 0.8rem;
+}
+
+.icon-container {
+  display: flex;
+  width: fit-content;
+  gap: 1.5rem;
+  padding: 3px 0px;
+}
+
+.desktop-share-container {
+  display: none;
+}
+
+@media (width <= 355px) {
+  .share-mobile p {
+    display: none;
+  }
+}
+
+.hidden {
+  opacity: 1;
+  transform: translateY(100%);
+}

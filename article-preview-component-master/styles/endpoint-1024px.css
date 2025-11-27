@@ -1,0 +1,88 @@
+@media (width > 1024px) {
+  .article-card {
+    max-width: calc(1 / 2 * 1440px);
+    flex-direction: row;
+    overflow: visible;
+  }
+
+  .share-mobile {
+    display: none;
+  }
+
+  .content {
+    padding: 2.5rem;
+  }
+
+  .cover {
+    max-width: 35%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+
+  .author-container {
+    padding: 0px 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-top: 0px;
+  }
+
+  .desktop-share-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .share-desktop {
+    position: absolute;
+    display: flex;
+    width: 22rem;
+    justify-content: space-between;
+    top: -6rem;
+    border-radius: 1rem;
+    background-color: var(--color-dark-grayish-blue);
+    padding: 1.5rem 3.5rem;
+    color: white;
+    align-items: center;
+    transition: opacity 0.5s ease;
+    gap: 0.6rem;
+  }
+
+  .share-desktop img {
+    cursor: pointer;
+  }
+
+  .share-btn-mobile {
+    display: none;
+  }
+
+  .share-btn-desktop {
+    border-radius: 100%;
+    border: none;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.1s;
+    z-index: 1;
+  }
+
+  .hidden {
+    transform: none;
+    opacity: 0;
+  }
+
+  .icon-container {
+    display: flex;
+    flex-shrink: 0;
+    width: fit-content;
+    gap: 20px;
+    padding: 0;
+  }
+
+  .share-desktop p {
+    letter-spacing: 0.7rem;
+    font-weight: 100;
+    margin-right: 0.8rem;
+  }
+}
