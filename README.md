@@ -11,3 +11,4 @@ I'm doing online challenges here, taken from Frontend Mentor, Roadmap.sh, and et
 5. [Four Card Feature](https://imhefizh.github.io/FrontEnd-Lab/four-card-feature-section-master/)
 6. [Testimonials Grid Section](https://imhefizh.github.io/FrontEnd-Lab/testimonials-grid-section-main/)
 7. [Article Preview Component](https://imhefizh.github.io/FrontEnd-Lab/article-preview-component-master)
+8. [Newsletter Sign Up with Success Message](https://imhefizh.github.io/FrontEnd-Lab/newsletter-sign-up-with-success-message-main)
