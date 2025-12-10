@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <style>
+      :root {
+        --color-purple-600: hsl(246, 80%, 60%);
+
+        --color-work: hsl(15, 100%, 70%);
+        --color-play: hsl(195, 74%, 62%);
+        --color-study: hsl(348, 100%, 68%);
+        --color-exercise: hsl(145, 58%, 55%);
+        --color-social: hsl(264, 64%, 52%);
+        --color-yellow: hsl(43, 84%, 65%);
+
+        --color-navy-950: hsl(226, 43%, 10%);
+        --color-navy-900: hsl(235, 46%, 20%);
+        --color-purple-500: hsl(235, 45%, 61%);
+        --color-navy-200: hsl(236, 100%, 87%);
+
+        --font: 1rem 300 "Rubik", Arial;
+      }
+
+      html,
+      body {
+        background-color: var(--color-navy-950);
+        font-size: 18px;
+        color: white;
+        padding: 2rem 0.8rem;
+      }
+
+      main {
+        display: grid;
+        grid-template-rows: 1.3fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="debug">
+      <section class="profile">
+        <img src="" alt="" class="photo" />
+        <p>Report for</p>
+        <h1>Jeremy Robson</h1>
+        <nav>
+          <button>Daily</button>
+          <button>Weekly</button>
+          <button>Monthly</button>
+        </nav>
+      </section>
+
+      <section class="card">
+        <div class="work"></div>
+        <div class="content">
+          <div class="left">
+            <h2>Work</h2>
+            <p>5Hrs</p>
+          </div>
+          <div class="right">
+            <div class="dots"></div>
+            <p class="previous">Previous - 7hrs</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="play"></div>
+        <div class="content">
+          <div class="left">
+            <h2>Play</h2>
+            <p>5Hrs</p>
+          </div>
+          <div class="right">
+            <div class="dots"></div>
+            <p class="previous">Previous - 7hrs</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="study"></div>
+        <div class="content">
+          <div class="left">
+            <h2>Study</h2>
+            <p>5Hrs</p>
+          </div>
+          <div class="right">
+            <div class="dots"></div>
+            <p class="previous">Previous - 7hrs</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="exercise"></div>
+        <div class="content">
+          <div class="left">
+            <h2>Exercise</h2>
+            <p>5Hrs</p>
+          </div>
+          <div class="right">
+            <div class="dots"></div>
+            <p class="previous">Previous - 7hrs</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="social"></div>
+        <div class="content">
+          <div class="left">
+            <h2>Social</h2>
+            <p>5Hrs</p>
+          </div>
+          <div class="right">
+            <div class="dots"></div>
+            <p class="previous">Previous - 7hrs</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="self-care"></div>
+        <div class="content">
+          <div class="left">
+            <h2>Self Care</h2>
+            <p>5Hrs</p>
+          </div>
+          <div class="right">
+            <div class="dots"></div>
+            <p class="previous">Previous - 7hrs</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Maulana Hafidz Ismail</a>.
+      </div>
+    </footer>
+  </body>
+</html>
