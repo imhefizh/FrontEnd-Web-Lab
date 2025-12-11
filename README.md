@@ -4,6 +4,10 @@ I'm doing online challenges here, taken from Frontend Mentor, Roadmap.sh, and et
 
 ## Check the live preview here:
 
+Latest work: [Time Tracking Dashboard](https://imhefizh.github.io/FrontEnd-Lab/time-tracking-dashboard-main)
+
+Previous works:
+
 1. [Blog Preview Card](https://imhefizh.github.io/FrontEnd-Lab/blog-preview-card-main/)
 2. [Social Links Profile](https://imhefizh.github.io/FrontEnd-Lab/social-links-profile-main/)
 3. [Recipe Page](https://imhefizh.github.io/FrontEnd-Lab/recipe-page-main)
@@ -12,3 +16,4 @@ I'm doing online challenges here, taken from Frontend Mentor, Roadmap.sh, and et
 6. [Testimonials Grid Section](https://imhefizh.github.io/FrontEnd-Lab/testimonials-grid-section-main/)
 7. [Article Preview Component](https://imhefizh.github.io/FrontEnd-Lab/article-preview-component-master)
 8. [Newsletter Sign Up with Success Message](https://imhefizh.github.io/FrontEnd-Lab/newsletter-sign-up-with-success-message-main)
+9. [Time Tracking Dashboard](https://imhefizh.github.io/FrontEnd-Lab/time-tracking-dashboard-main)

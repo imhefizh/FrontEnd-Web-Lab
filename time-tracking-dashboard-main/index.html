@@ -3,162 +3,223 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <!-- Styles -->
     <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/breakpoint-base.css" />
+    <link rel="stylesheet" href="./styles/breakpoint-1024px.css" />
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
+    <!-- Javascript -->
+    <script defer src="./main.js"></script>
+    <!-- Icon -->
+    <script
+      src="https://kit.fontawesome.com/08f132158c.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Frontend Mentor | Time tracking dashboard</title>
-    <style>
-      :root {
-        --color-purple-600: hsl(246, 80%, 60%);
-
-        --color-work: hsl(15, 100%, 70%);
-        --color-play: hsl(195, 74%, 62%);
-        --color-study: hsl(348, 100%, 68%);
-        --color-exercise: hsl(145, 58%, 55%);
-        --color-social: hsl(264, 64%, 52%);
-        --color-yellow: hsl(43, 84%, 65%);
-
-        --color-navy-950: hsl(226, 43%, 10%);
-        --color-navy-900: hsl(235, 46%, 20%);
-        --color-purple-500: hsl(235, 45%, 61%);
-        --color-navy-200: hsl(236, 100%, 87%);
-
-        --font: 1rem 300 "Rubik", Arial;
-      }
-
-      html,
-      body {
-        background-color: var(--color-navy-950);
-        font-size: 18px;
-        color: white;
-        padding: 2rem 0.8rem;
-      }
-
-      main {
-        display: grid;
-        grid-template-rows: 1.3fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        gap: 1rem;
-      }
-
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    <main class="debug">
-      <section class="profile">
-        <img src="" alt="" class="photo" />
-        <p>Report for</p>
-        <h1>Jeremy Robson</h1>
-        <nav>
-          <button>Daily</button>
-          <button>Weekly</button>
-          <button>Monthly</button>
-        </nav>
-      </section>
+    <main class="">
+      <header class="profile">
+        <div class="user">
+          <img src="./assets/profile.jpg" alt="photo" class="photo" />
+          <div>
+            <p>Report for</p>
+            <h1>Lucy Kushinada</h1>
+          </div>
+        </div>
+        <div class="navbar">
+          <nav>
+            <button id="daily" class="btn sleep">Daily</button>
+            <button id="weekly" class="btn sleep">Weekly</button>
+            <button id="monthly" class="btn sleep">Monthly</button>
+          </nav>
+        </div>
+      </header>
 
-      <section class="card">
-        <div class="work"></div>
+      <section class="card work">
+        <div class="cover">
+          <i class="icon fa-solid fa-4x fa-briefcase"></i>
+        </div>
         <div class="content">
           <div class="left">
             <h2>Work</h2>
-            <p>5Hrs</p>
+            <svg
+              fill="#BEC0F4"
+              height="25px"
+              width="25px"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                class="cls-1"
+                d="M8,6.5A1.5,1.5,0,1,1,6.5,8,1.5,1.5,0,0,1,8,6.5ZM.5,8A1.5,1.5,0,1,0,2,6.5,1.5,1.5,0,0,0,.5,8Zm12,0A1.5,1.5,0,1,0,14,6.5,1.5,1.5,0,0,0,12.5,8Z"
+              />
+            </svg>
           </div>
           <div class="right">
-            <div class="dots"></div>
-            <p class="previous">Previous - 7hrs</p>
+            <div class="dots">
+              <p id="work-hour" class="hour">0hrs</p>
+            </div>
+            <p id="work-previous">Previous - 0hrs</p>
           </div>
         </div>
       </section>
 
-      <section class="card">
-        <div class="play"></div>
+      <section class="card play">
+        <div class="cover"><i class="fa-solid fa-gamepad fa-4x icon"></i></div>
         <div class="content">
           <div class="left">
             <h2>Play</h2>
-            <p>5Hrs</p>
+            <svg
+              fill="#BEC0F4"
+              height="25px"
+              width="25px"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                class="cls-1"
+                d="M8,6.5A1.5,1.5,0,1,1,6.5,8,1.5,1.5,0,0,1,8,6.5ZM.5,8A1.5,1.5,0,1,0,2,6.5,1.5,1.5,0,0,0,.5,8Zm12,0A1.5,1.5,0,1,0,14,6.5,1.5,1.5,0,0,0,12.5,8Z"
+              />
+            </svg>
           </div>
           <div class="right">
-            <div class="dots"></div>
-            <p class="previous">Previous - 7hrs</p>
+            <div class="dots">
+              <p id="play-hour" class="hour">0hrs</p>
+            </div>
+            <p id="play-previous">Previous - 0hrs</p>
           </div>
         </div>
       </section>
 
-      <section class="card">
-        <div class="study"></div>
+      <section class="card study">
+        <div class="cover"><i class="fa-solid fa-book fa-4x icon"></i></div>
         <div class="content">
           <div class="left">
             <h2>Study</h2>
-            <p>5Hrs</p>
+            <svg
+              fill="#BEC0F4"
+              height="25px"
+              width="25px"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                class="cls-1"
+                d="M8,6.5A1.5,1.5,0,1,1,6.5,8,1.5,1.5,0,0,1,8,6.5ZM.5,8A1.5,1.5,0,1,0,2,6.5,1.5,1.5,0,0,0,.5,8Zm12,0A1.5,1.5,0,1,0,14,6.5,1.5,1.5,0,0,0,12.5,8Z"
+              />
+            </svg>
           </div>
           <div class="right">
-            <div class="dots"></div>
-            <p class="previous">Previous - 7hrs</p>
+            <div class="dots">
+              <p id="study-hour" class="hour">0hrs</p>
+            </div>
+            <p id="study-previous">Previous - 0hrs</p>
           </div>
         </div>
       </section>
 
-      <section class="card">
-        <div class="exercise"></div>
+      <section class="card exercise">
+        <div class="cover">
+          <i class="fa-solid fa-person-walking fa-4x icon"></i>
+        </div>
         <div class="content">
           <div class="left">
             <h2>Exercise</h2>
-            <p>5Hrs</p>
+            <svg
+              fill="#BEC0F4"
+              height="25px"
+              width="25px"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                class="cls-1"
+                d="M8,6.5A1.5,1.5,0,1,1,6.5,8,1.5,1.5,0,0,1,8,6.5ZM.5,8A1.5,1.5,0,1,0,2,6.5,1.5,1.5,0,0,0,.5,8Zm12,0A1.5,1.5,0,1,0,14,6.5,1.5,1.5,0,0,0,12.5,8Z"
+              />
+            </svg>
           </div>
           <div class="right">
-            <div class="dots"></div>
-            <p class="previous">Previous - 7hrs</p>
+            <div class="dots">
+              <p id="exercise-hour" class="hour">0hrs</p>
+            </div>
+            <p id="exercise-previous">Previous - 0hrs</p>
           </div>
         </div>
       </section>
 
-      <section class="card">
-        <div class="social"></div>
+      <section class="card social">
+        <div class="cover">
+          <i class="fa-solid fa-user-group fa-4x icon"></i>
+        </div>
         <div class="content">
           <div class="left">
             <h2>Social</h2>
-            <p>5Hrs</p>
+            <svg
+              fill="#BEC0F4"
+              height="25px"
+              width="25px"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                class="cls-1"
+                d="M8,6.5A1.5,1.5,0,1,1,6.5,8,1.5,1.5,0,0,1,8,6.5ZM.5,8A1.5,1.5,0,1,0,2,6.5,1.5,1.5,0,0,0,.5,8Zm12,0A1.5,1.5,0,1,0,14,6.5,1.5,1.5,0,0,0,12.5,8Z"
+              />
+            </svg>
           </div>
           <div class="right">
-            <div class="dots"></div>
-            <p class="previous">Previous - 7hrs</p>
+            <div class="dots">
+              <p id="social-hour" class="hour">0hrs</p>
+            </div>
+            <p id="social-previous">Previous - 0hrs</p>
           </div>
         </div>
       </section>
 
-      <section class="card">
-        <div class="self-care"></div>
+      <section class="card self-care">
+        <div class="cover">
+          <i class="fa-solid fa-heart-pulse fa-4x icon"></i>
+        </div>
         <div class="content">
           <div class="left">
             <h2>Self Care</h2>
-            <p>5Hrs</p>
+            <svg
+              fill="#BEC0F4"
+              height="25px"
+              width="25px"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                class="cls-1"
+                d="M8,6.5A1.5,1.5,0,1,1,6.5,8,1.5,1.5,0,0,1,8,6.5ZM.5,8A1.5,1.5,0,1,0,2,6.5,1.5,1.5,0,0,0,.5,8Zm12,0A1.5,1.5,0,1,0,14,6.5,1.5,1.5,0,0,0,12.5,8Z"
+              />
+            </svg>
           </div>
           <div class="right">
-            <div class="dots"></div>
-            <p class="previous">Previous - 7hrs</p>
+            <div class="dots">
+              <p id="selfcare-hour" class="hour">0hrs</p>
+            </div>
+            <p id="selfcare-previous">Previous - 0hrs</p>
           </div>
         </div>
       </section>
     </main>
 
-    <footer>
+    <footer class="">
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"

@@ -1,0 +1,177 @@
+body {
+  display: flex;
+  position: relative;
+  background-color: var(--color-navy-950);
+  font-size: 18px;
+  color: white;
+  padding: 4rem 1.8rem;
+  font: var(--font);
+  justify-content: center;
+}
+
+main {
+  display: grid;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Header:Start */
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-navy-900);
+  border-radius: 1rem;
+}
+
+.user {
+  display: flex;
+  gap: 1.2rem;
+  padding: 2rem 1rem;
+  background-color: var(--color-purple-600);
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo {
+  border-radius: 100%;
+  outline: 3px solid white;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.user div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.user div p {
+  color: rgb(207, 207, 207);
+}
+
+.user div h1 {
+  font-weight: 300;
+  font-size: clamp(1rem, 8vw, 1.6rem);
+}
+
+.navbar nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.3rem;
+}
+
+.navbar nav .btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  letter-spacing: 0.5px;
+  user-select: none;
+}
+
+.navbar nav button:active {
+  opacity: 1;
+}
+
+.sleep {
+  opacity: 0.3;
+}
+
+/* Header:End */
+
+/* Card:Start  */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  background-color: var(--color-navy-200);
+  user-select: none;
+}
+
+.card .cover {
+  height: 2.5rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: end;
+}
+
+.card .content {
+  background-color: var(--color-navy-900);
+  flex: 1;
+  border-radius: 1rem;
+  padding: 1.7rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card .content .left {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .content .left h2 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.card .content .right .hour {
+  font-size: 2rem;
+  margin-top: 0.2rem;
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+}
+
+.card .content .right {
+  display: flex;
+  flex-direction: row;
+  color: var(--color-navy-200);
+  font-size: 0.8rem;
+  align-items: center;
+  justify-content: space-between;
+  text-align: right;
+}
+
+.icon {
+  rotate: 0.6rad;
+  margin-right: 10px;
+  margin-top: -5px;
+  color: black;
+  opacity: 0.18;
+}
+
+/* Card:End  */
+
+/* Color Theme:Start */
+
+.work {
+  background-color: var(--color-work);
+}
+
+.play {
+  background-color: var(--color-play);
+}
+
+.study {
+  background-color: var(--color-study);
+}
+
+.exercise {
+  background-color: var(--color-exercise);
+}
+
+.social {
+  background-color: var(--color-social);
+}
+
+.self-care {
+  background-color: var(--color-yellow);
+}
+
+/* Color Theme:End */
