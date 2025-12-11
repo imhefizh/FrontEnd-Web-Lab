@@ -13,7 +13,7 @@ async function fetchData() {
     console.log(error);
   }
 }
-fetchData(); // Initiator
+fetchData().then(() => setActiveNav()); // Initiator
 
 // Set navigation state
 let activeNav;
@@ -35,7 +35,6 @@ function setActiveNav(e = "daily") {
   const btn = document.getElementById(activeNav);
   btn.classList.remove("sleep");
 }
-setActiveNav(); // Initiator
 
 // Data operation
 const workHour = document.getElementById("work-hour");
