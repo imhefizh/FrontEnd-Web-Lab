@@ -55,3 +55,17 @@ h6 {
   isolation: isolate;
 }
 /* End of CSS Resetter */
+
+.debug {
+  outline: 1px dashed red;
+}
+
+.btn-inactive {
+  background-color: var(--color-green-900);
+  color: white;
+}
+
+.btn-active {
+  background-color: var(--color-green-400);
+  color: var(--color-green-900);
+}

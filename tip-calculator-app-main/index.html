@@ -10,8 +10,12 @@
       href="./images/favicon-32x32.png"
     />
     <title>Frontend Mentor | Tip calculator app</title>
-    <script src="./styles/globals.css"></script>
-    <script src="./styles/breakpoint-base.css"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/breakpoint-base.css" />
+    <!-- script -->
+    <script src="./main.js" defer></script>
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,24 +23,120 @@
       rel="stylesheet"
     />
     <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
+      .result-panel {
+        background-color: var(--color-green-900);
+        border-radius: 1rem;
+        padding: 1.5rem;
+        padding-top: 2.5rem;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
       }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
+
+      .result-panel .value-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .result-panel .value-wrapper div {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .result-panel .value-wrapper div .main-text {
+        color: white;
+        font-weight: 600;
+        font-size: 0.9rem;
+      }
+
+      .result-panel .value-wrapper div .side-text {
+        font-size: 0.8rem;
+      }
+
+      .result-panel .value-wrapper .value {
+        font-size: 1.8rem;
+        color: var(--color-green-400);
+      }
+
+      .result-panel button {
+        margin-top: 1rem;
+        background-color: var(--color-green-400);
+        border-radius: 0.4rem;
+        border: none;
+        width: 100%;
+        color: var(--color-green-900);
+        padding: 0.6rem 0;
       }
     </style>
   </head>
   <body>
-    Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
-    person Total / person Reset
+    <header>
+      <h1>
+        SPLI <br />
+        TTER
+      </h1>
+    </header>
+    <main>
+      <div class="control-panel">
+        <div class="form">
+          <label for="bill">Bill</label>
+          <div class="input-wrapper">
+            <img src="./images/icon-dollar.svg" alt="dollar" />
+            <input type="number" name="bill" id="bill" placeholder="0" />
+          </div>
+        </div>
+        <div class="form">
+          <p>Select Tip %</p>
+          <div name="tip-selector" class="tip-selector">
+            <button class="btn btn-inactive">5%</button>
+            <button class="btn btn-inactive">10%</button>
+            <button class="btn btn-inactive">15%</button>
+            <button class="btn btn-inactive">25%</button>
+            <button class="btn btn-inactive">50%</button>
+            <input
+              type="number"
+              class="custom"
+              placeholder="Custom"
+              id="custom"
+              name="custom"
+            />
+          </div>
+        </div>
+        <div class="form">
+          <label for="nop">Number of People</label>
+          <div class="input-wrapper">
+            <img src="./images/icon-person.svg" alt="person" />
+            <input type="number" name="nop" id="nop" placeholder="0" />
+          </div>
+        </div>
+      </div>
 
-    <div class="attribution">
+      <div class="result-panel">
+        <div class="value-wrapper">
+          <div>
+            <p class="main-text">Tip Amount</p>
+            <p class="side-text">/ person</p>
+          </div>
+          <p class="value">0.00</p>
+        </div>
+        <div class="value-wrapper">
+          <div>
+            <p class="main-text">Total</p>
+            <p class="side-text">/ person</p>
+          </div>
+          <p class="value">0.00</p>
+        </div>
+        <button>RESET</button>
+      </div>
+    </main>
+
+    <footer>
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Maulana Hafidz Ismail</a>.
-    </div>
+    </footer>
   </body>
 </html>
