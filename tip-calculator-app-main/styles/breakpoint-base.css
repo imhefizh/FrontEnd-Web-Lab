@@ -1,0 +1,14 @@
+:root {
+  --color-green-400: hsl(172, 67%, 45%);
+  --color-green-900: hsl(183, 100%, 15%);
+  --color-grey-500: hsl(186, 14%, 43%);
+  --color-grey-400: hsl(184, 14%, 56%);
+  --color-grey-200: hsl(185, 41%, 84%);
+  --color-grey-50: hsl(189, 47%, 97%);
+
+  --font: 300 1rem "Space Mono", Arial;
+}
+
+html {
+  font-size: 24px; /* 1rem */
+}
