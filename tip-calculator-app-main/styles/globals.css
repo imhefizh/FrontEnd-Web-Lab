@@ -56,6 +56,22 @@ h6 {
 }
 /* End of CSS Resetter */
 
+:root {
+  --color-green-400: hsl(172, 67%, 45%);
+  --color-green-900: hsl(183, 100%, 15%);
+  --color-grey-500: hsl(186, 14%, 43%);
+  --color-grey-400: hsl(184, 14%, 56%);
+  --color-grey-200: hsl(185, 41%, 84%);
+  --color-grey-50: hsl(185, 73%, 97%);
+
+  --font: 300 1rem "Space Mono", Arial;
+}
+
+html {
+  font: var(--font);
+  font-size: 16px; /* 1rem */
+}
+
 .debug {
   outline: 1px dashed red;
 }
@@ -68,4 +84,26 @@ h6 {
 .btn-active {
   background-color: var(--color-green-400);
   color: var(--color-green-900);
+}
+
+.bounce-on-click {
+  transition: transform 0s;
+  cursor: pointer;
+  user-select: none;
+}
+
+.bounce-on-click:active {
+  transform: translateY(1px);
+}
+
+.error {
+  color: orangered;
+}
+
+.input-error {
+  outline: 3px solid orangered;
+}
+
+.hide {
+  opacity: 0;
 }

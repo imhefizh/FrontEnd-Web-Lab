@@ -13,8 +13,9 @@
     <!-- Styles -->
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/breakpoint-base.css" />
+    <link rel="stylesheet" href="./styles/breakpoint-1024px.css" />
     <!-- script -->
-    <script src="./main.js" defer></script>
+    <script type="module" src="./scripts/main.js" defer></script>
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,54 +23,7 @@
       href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-    <style>
-      .result-panel {
-        background-color: var(--color-green-900);
-        border-radius: 1rem;
-        padding: 1.5rem;
-        padding-top: 2.5rem;
-        margin-bottom: 1rem;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-      }
-
-      .result-panel .value-wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .result-panel .value-wrapper div {
-        display: flex;
-        flex-direction: column;
-      }
-
-      .result-panel .value-wrapper div .main-text {
-        color: white;
-        font-weight: 600;
-        font-size: 0.9rem;
-      }
-
-      .result-panel .value-wrapper div .side-text {
-        font-size: 0.8rem;
-      }
-
-      .result-panel .value-wrapper .value {
-        font-size: 1.8rem;
-        color: var(--color-green-400);
-      }
-
-      .result-panel button {
-        margin-top: 1rem;
-        background-color: var(--color-green-400);
-        border-radius: 0.4rem;
-        border: none;
-        width: 100%;
-        color: var(--color-green-900);
-        padding: 0.6rem 0;
-      }
-    </style>
+    <style></style>
   </head>
   <body>
     <header>
@@ -81,20 +35,60 @@
     <main>
       <div class="control-panel">
         <div class="form">
-          <label for="bill">Bill</label>
-          <div class="input-wrapper">
+          <div class="label-wrapper">
+            <label for="bill">Bill</label>
+            <p id="bill-error" class="error hide">Can't be zero</p>
+          </div>
+          <div id="bill-input-wrapper" class="input-wrapper">
             <img src="./images/icon-dollar.svg" alt="dollar" />
-            <input type="number" name="bill" id="bill" placeholder="0" />
+            <input
+              type="number"
+              name="bill"
+              id="bill"
+              data-testid="bill"
+              placeholder="0"
+              class="input"
+            />
           </div>
         </div>
         <div class="form">
           <p>Select Tip %</p>
           <div name="tip-selector" class="tip-selector">
-            <button class="btn btn-inactive">5%</button>
-            <button class="btn btn-inactive">10%</button>
-            <button class="btn btn-inactive">15%</button>
-            <button class="btn btn-inactive">25%</button>
-            <button class="btn btn-inactive">50%</button>
+            <button
+              id="tip-5"
+              data-tip="5"
+              class="btn btn-inactive bounce-on-click"
+            >
+              5%
+            </button>
+            <button
+              id="tip-10"
+              data-tip="10"
+              class="btn btn-inactive bounce-on-click"
+            >
+              10%
+            </button>
+            <button
+              id="tip-15"
+              data-tip="15"
+              class="btn btn-inactive bounce-on-click"
+            >
+              15%
+            </button>
+            <button
+              id="tip-25"
+              data-tip="25"
+              class="btn btn-inactive bounce-on-click"
+            >
+              25%
+            </button>
+            <button
+              id="tip-50"
+              data-tip="50"
+              class="btn btn-inactive bounce-on-click"
+            >
+              50%
+            </button>
             <input
               type="number"
               class="custom"
@@ -105,30 +99,48 @@
           </div>
         </div>
         <div class="form">
-          <label for="nop">Number of People</label>
-          <div class="input-wrapper">
+          <div class="label-wrapper">
+            <label for="nop">Number of People</label>
+            <p id="nop-error" class="error hide">Can't be zero</p>
+          </div>
+          <div id="nop-input-wrapper" class="input-wrapper">
             <img src="./images/icon-person.svg" alt="person" />
-            <input type="number" name="nop" id="nop" placeholder="0" />
+            <input
+              type="number"
+              name="nop"
+              id="nop"
+              data-testid="nop"
+              placeholder="1"
+              class="input"
+            />
           </div>
         </div>
       </div>
 
       <div class="result-panel">
-        <div class="value-wrapper">
-          <div>
-            <p class="main-text">Tip Amount</p>
-            <p class="side-text">/ person</p>
+        <div class="wrapper">
+          <div class="value-wrapper">
+            <div>
+              <p class="main-text">Tip Amount</p>
+              <p class="side-text">/ person</p>
+            </div>
+            <p class="value">
+              $<span id="tip-amount-value" data-testid="tip-amount-value"
+                >0.00</span
+              >
+            </p>
           </div>
-          <p class="value">0.00</p>
-        </div>
-        <div class="value-wrapper">
-          <div>
-            <p class="main-text">Total</p>
-            <p class="side-text">/ person</p>
+          <div class="value-wrapper">
+            <div>
+              <p class="main-text">Total</p>
+              <p class="side-text">/ person</p>
+            </div>
+            <p class="value">
+              $<span id="total-value" data-testid="total-value">0.00</span>
+            </p>
           </div>
-          <p class="value">0.00</p>
         </div>
-        <button>RESET</button>
+        <button id="reset-btn" class="bounce-on-click">RESET</button>
       </div>
     </main>
 

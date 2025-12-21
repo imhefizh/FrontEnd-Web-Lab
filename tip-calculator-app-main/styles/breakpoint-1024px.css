@@ -1,0 +1,199 @@
+@media (width > 1024px) {
+  header {
+    text-align: center;
+    color: var(--color-green-900);
+    padding: 1.8rem 0;
+  }
+
+  header h1 {
+    letter-spacing: 0.5rem;
+    font-size: 1.4rem;
+  }
+
+  body {
+    background-color: var(--color-grey-200);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6rem;
+  }
+
+  main {
+    width: fit-content;
+    margin-top: 2rem;
+    background-color: white;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-radius: 1rem;
+    flex: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    /* padding-bottom: 0rem; */
+    font-weight: 600;
+    color: var(--color-grey-500);
+    gap: 2rem;
+    box-shadow: 0px 20px 30px rgba(98, 114, 116, 0.2);
+  }
+
+  main .control-panel {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  main .control-panel .form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  main .control-panel .form .input-wrapper {
+    display: flex;
+    border-radius: 5px;
+    background-color: var(--color-grey-50);
+    padding: 0.5rem 1rem;
+    align-items: center;
+  }
+
+  main .control-panel .form .input-wrapper:focus-within {
+    outline: 3px solid var(--color-green-400);
+  }
+
+  main .control-panel .form .input-wrapper img {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  main .control-panel .form .input-wrapper .input {
+    border: none;
+    font-size: 1.2rem;
+    flex: 1;
+    text-align: right;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--color-green-900);
+    width: 100%;
+  }
+
+  main .control-panel .form .input-wrapper input::placeholder {
+    color: var(--color-grey-200);
+  }
+
+  main .control-panel .form .tip-selector {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 50% 50%; */
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  main .control-panel .form .tip-selector .btn {
+    padding: 0.5rem 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+  }
+
+  main .control-panel .form .tip-selector .btn:active {
+    background-color: var(--color-green-400);
+    color: var(--color-green-900);
+  }
+
+  .custom {
+    padding: 0.5rem 0;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    width: 100%;
+    color: var(--color-green-900);
+    background-color: var(--color-grey-50);
+  }
+
+  .custom::placeholder {
+    color: var(--color-grey-500);
+  }
+
+  .custom:focus {
+    outline: 3px solid var(--color-green-400);
+  }
+
+  .result-panel {
+    width: 50%;
+    background-color: var(--color-green-900);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    padding-top: 2.5rem;
+    margin-bottom: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .result-panel .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .result-panel .value-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .result-panel .value-wrapper div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .result-panel .value-wrapper div .main-text {
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  .result-panel .value-wrapper div .side-text {
+    font-size: 0.8rem;
+  }
+
+  .result-panel .value-wrapper .value {
+    font-size: 2.6rem;
+    color: var(--color-green-400);
+  }
+
+  .result-panel button {
+    margin-top: 1rem;
+    background-color: var(--color-green-400);
+    border-radius: 0.4rem;
+    border: none;
+    width: 100%;
+    color: var(--color-green-900);
+    padding: 0.6rem 0;
+  }
+
+  .result-panel button:active {
+    filter: brightness(120%);
+    color: var(--color-green-900);
+  }
+
+  footer {
+    position: absolute;
+    bottom: calc(80vh / 100vh * 20px);
+    padding: 0px 1rem;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  footer a {
+    font-weight: 600;
+    color: var(--color-green-900);
+  }
+}
